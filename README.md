@@ -4,14 +4,6 @@ ruby on rails project
 In this project, you’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
 
-## Table of Contents
-
-* [About the Project](#about-the-project)
-* [BUILT WITH](#built_with)
-* [AUTOMATED TEST](#automated_test)
-* [ACKNOWLEDGMENT](#acknowledgment)
-* [USAGE](#usage)
-* [AUTHORS](#authors)
 
 ## About the project
 
