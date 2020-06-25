@@ -5,7 +5,7 @@ In this project, you’ll be building an exclusive clubhouse where your members 
 
 
 
-## About the project
+
 
 In this project, we implemented authentication systems so users can only access areas of a site they are authorized to.
 This assignment consists of using the Devise gem to have a first approach at authentication in rails. We built an application that allows users to create posts and the authors of the posts are displayed only if as a User you are logged in.
