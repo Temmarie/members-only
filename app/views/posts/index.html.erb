@@ -3,14 +3,16 @@
 <h1>Posts</h1>
 <p>
 Welcome
-
+<%= current_user.username %>
 </p>
 <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Body</th>
+      <% if signed_in? %>
       <th>User</th>
+      <% end %>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,7 +27,7 @@ Welcome
         <% if !current_user%>
         <%=  %>
         <% else %>
-        <%= post.user_id %>
+        <%= post.user.username %>
         <% end %>
         </td>
         <td><%= link_to 'Show', post %></td>
