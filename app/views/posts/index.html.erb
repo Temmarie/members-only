@@ -27,10 +27,9 @@
         <%= post.user.username %>
         <% end %>
         </td>
-        <td><%= link_to 'Show', post %></td>
-        <% if current_user && current_user.admin %>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', posts_path %></td>
+        
+        <% if current_user && current_user.admin%>
         <% end %>
       </tr>
     <% end %>
@@ -40,3 +39,10 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+
+<% if current_user%>
+<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+<% else %>
+<%= link_to 'Sign Up', new_user_registration_path %>
+<%= link_to 'Sign in', new_user_session_path %>
+<% end %>
